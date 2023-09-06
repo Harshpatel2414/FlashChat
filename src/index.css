@@ -129,10 +129,10 @@
     background-color: blueviolet;
     height: 100dvh;
     width: 100dvw;
-    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .home .container {
@@ -169,7 +169,8 @@
     gap: 8px;
 
 }
-.navbar .user span{
+
+.navbar .user span {
     font-size: 16px;
 }
 
@@ -198,16 +199,19 @@
     padding: 5px;
     gap: 8px;
 }
-.searchForm{
+
+.searchForm {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.searchForm img{
+
+.searchForm img {
     width: 24px;
     height: 24px;
     cursor: pointer;
 }
+
 .search .searchForm input {
     background-color: blueviolet;
     border: none;
@@ -226,7 +230,7 @@
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-y: scroll;
     background-color: #d68af9;
     height: calc(100% - 96px);
     padding: 5px;
@@ -241,7 +245,7 @@
     border-radius: 8px;
     color: white;
     cursor: pointer;
-    background-color:#5b0285;
+    background-color: #5b0285;
 }
 
 .userChatInfo span {
@@ -396,63 +400,94 @@
     padding: 5px 16px;
     border: none;
     outline: none;
-    background-color: blueviolet;
+    background-color: #8a2be2;
     color: white;
     font-weight: bold;
     border-radius: 16px;
 }
+
 /* Extra small devices (phones, 600px and down) */
-@media  (min-width:360px) and (max-width: 767px) {
-    .form-container{
+@media (min-width:360px) and (max-width: 767px) {
+    .form-container {
         flex-direction: column;
         justify-content: center;
         gap: 40px;
         height: 100dvh;
     }
-    .mainInfo{
+
+    .mainInfo {
         width: 80dvw;
     }
-    .mainInfo img{
-       height: 150px;
+
+    .mainInfo img {
+        height: 150px;
     }
-    .home .container{
+
+    .home .container {
         flex-direction: column;
+        overflow: hidden;
     }
-    .navbar .logo{
+
+    .navbar .logo {
         display: none;
     }
-    .navbar .user{
+
+    .navbar .user {
         display: flex;
         justify-content: space-between;
         width: 100%;
     }
-    .sidebar{
-        height: fit-content;
+
+    .sidebar {
+        flex: 1;
+        max-height: 50%;
+        border: none;
     }
-    .chat{
-        height: 50dvh;
+
+    .chat {
+        flex: 1;
+        max-height: 50%;
     }
+
+    .chats .userChatInfo {
+        height: 60px;
+    }
+    
+   
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media  (min-width: 768px) and (max-width: 992px) {
-     .form-container{
+@media (min-width: 768px) and (max-width: 992px) {
+    .form-container {
         justify-content: center;
         gap: 32px;
-     }
-     .mainInfo{
+    }
+
+    .mainInfo {
         width: 40vw;
-     }
-     .mainInfo img{
+    }
+
+    .mainInfo img {
         height: 150px;
-     }
-     .form-wrap {
+    }
+
+    .form-wrap {
         padding: 10px;
     }
-    .navbar .logo{
+
+    .home .sidebar {
+        flex: 1;
+    }
+
+    .home .chat {
+        flex: 2;
+    }
+
+    .navbar .logo {
         display: none;
     }
-    .navbar .user{
+
+    .navbar .user {
         display: flex;
         justify-content: space-around;
         width: 100%;
@@ -460,6 +495,4 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
+@media only screen and (min-width: 1200px) {}
