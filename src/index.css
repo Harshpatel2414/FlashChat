@@ -407,7 +407,7 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media (min-width:360px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .form-container {
         flex-direction: column;
         justify-content: center;
