@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Roboto Slab', serif;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: blueviolet;
+    height: 100vh;
+}
+
+.mainInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainInfo img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.mainInfo h1 {
+    color: white;
+    font-weight: bold;
+}
+
+.mainInfo p {
+    color: wheat;
+    text-align: center;
+}
+
+.form-wrap {
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-wrap .logo {
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.form-wrap form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-wrap form label {
+    overflow: hidden;
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.form-wrap form label span {
+    margin-top: 4px;
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    align-items: center;
+    color: blueviolet;
+}
+
+.form-wrap form label img {
+    align-items: center;
+    overflow: hidden;
+    justify-content: center;
+    margin: auto;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid blueviolet;
+}
+
+.form-wrap form input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid blueviolet;
+    width: 280px;
+}
+
+.form-wrap form input ::placeholder {
+    color: gray;
+}
+
+.form-wrap button {
+    border: 1px solid blueviolet;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.form-wrap button:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.form-wrap p {
+    color: blueviolet;
+    font-size: 12px;
+}
+
+.home {
+    background-color: blueviolet;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+}
+
+.sidebar {
+    flex: 1;
+    background: #d68af9;
+    border-right: 2px solid white;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #40005e;
+    height: 50px;
+    padding: 8px;
+    justify-content: space-between;
+    color: white;
+}
+
+.navbar .logo {
+    font-weight: bold;
+}
+
+.navbar .user {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.navbar .user span {
+    font-size: 16px;
+}
+
+.navbar .user img {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.navbar .user button {
+    background-color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: blueviolet;
+    cursor: pointer;
+    border: none;
+
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid white;
+    padding: 5px;
+    gap: 8px;
+}
+
+.searchForm {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.searchForm img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search .searchForm input {
+    background-color: blueviolet;
+    border: none;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+    color: white;
+    padding: 5px;
+}
+
+.search .searchForm input::placeholder {
+    color: rgb(189, 189, 189);
+}
+
+.chats {
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    background-color: #d68af9;
+    height: calc(100% - 96px);
+    padding: 5px;
+    gap: 4px;
+}
+
+.userChatInfo {
+    padding: 8px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    background-color: #5b0285;
+}
+
+.userChatInfo span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userChatInfo p {
+    font-size: 14px;
+}
+
+.userChatInfo:hover {
+    background-color: #40005e;
+}
+
+.userChatInfo img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chat {
+    flex: 3;
+    flex-direction: column;
+}
+
+.chatInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    height: 50px;
+    background-color: #40005e;
+    color: white;
+    align-items: center;
+}
+
+.chatInfo span {
+    font-weight: bold;
+}
+
+.chatInfo .chatIcons {
+    display: flex;
+    gap: 16px;
+}
+
+.chatInfo .chatIcons img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    cursor: pointer;
+    filter: invert();
+}
+
+.chating {
+    background-color: #5d1f96;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.message {
+    display: flex;
+    gap: 10px;
+    margin: 8px;
+}
+
+.owner {
+    flex-direction: row-reverse;
+}
+
+.owner .msgContent {
+    align-items: flex-end;
+}
+
+.owner .msgInfo {
+    align-items: flex-end;
+}
+
+.owner .msgContent p {
+    border-radius: 8px 8px 0 8px;
+    max-width: max-content;
+}
+
+.message .msgInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.msgInfo img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.msgInfo span {
+    font-size: 12px;
+    color: gray;
+}
+
+.message .msgContent {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.msgContent p {
+    border-radius: 8px 8px 8px 0;
+    background-color: white;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.msgContent img {
+    width: 60%;
+}
+
+.input {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 8px;
+}
+
+.input input {
+    padding: 8px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.input .send {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input label img {
+    cursor: pointer;
+    object-fit: cover;
+    width: 24px;
+    height: 24px;
+}
+
+.input button {
+    cursor: pointer;
+    padding: 5px 16px;
+    border: none;
+    outline: none;
+    background-color: #8a2be2;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 767px) {
+    .form-container {
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        height: 100dvh;
+    }
+
+    .mainInfo {
+        width: 80dvw;
+    }
+
+    .mainInfo img {
+        height: 150px;
+    }
+
+    .home .container {
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .user {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .sidebar {
+        flex: 1;
+        max-height: 50%;
+        border: none;
+    }
+
+    .chat {
+        flex: 1;
+        max-height: 50%;
+    }
+
+    .chats .userChatInfo {
+        height: 60px;
+    }
+    
+   
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .form-container {
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .mainInfo {
+        width: 40vw;
+    }
+
+    .mainInfo img {
+        height: 150px;
+    }
+
+    .form-wrap {
+        padding: 10px;
+    }
+
+    .home .sidebar {
+        flex: 1;
+    }
+
+    .home .chat {
+        flex: 2;
+    }
+
+    .navbar .logo {
+        display: none;
+    }
+
+    .navbar .user {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
